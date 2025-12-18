@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+🎉 Event Management Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React frontend for the Event Management project, providing a user-friendly interface to browse events, register, and log in. This frontend interacts with a backend API to fetch and manage event data.
 
-## Available Scripts
+🚀 Live Demo
 
-In the project directory, you can run:
+Frontend (Netlify): https://6943f5b6cea61e00aa8e4871--shimmering-yeot-a02324.netlify.app/
 
-### `npm start`
+💡 Features & Functionalities
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+User Authentication: Registration and login functionality with JWT-based secure authentication.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Event Listing: Users can view a list of events with details.
 
-### `npm test`
+Event Interaction: Participate in events and view details dynamically.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Responsive UI: Fully responsive interface built with React and Bootstrap.
 
-### `npm run build`
+API Integration: Connects to backend services via Axios for dynamic data fetching.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Routing: Multi-page navigation implemented using React Router.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Local Storage: Stores authentication tokens for persistent sessions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🧪 Running Locally
+1️⃣ Install dependencies
+npm install
+# or
+yarn
 
-### `npm run eject`
+2️⃣ Start the development server
+npm start
+# or
+yarn start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Runs the app locally at:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+http://localhost:3000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+⚙️ Environment Variables
 
-## Learn More
+Create a .env file in the project root (do not push to GitHub):
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+REACT_APP_API_URL=https://<your-backend-on-render>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Use it in your code:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+axios.get(`${process.env.REACT_APP_API_URL}/api/events`)
 
-### Analyzing the Bundle Size
+🌍 Deployment (Netlify)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Push your frontend code to GitHub
 
-### Making a Progressive Web App
+Go to Netlify → Add new site → Import from GitHub
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Select your repository (EventFrontend)
 
-### Advanced Configuration
+Set build settings:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Build Command: npm run build
 
-### Deployment
+Publish Directory: build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Add environment variable:
 
-### `npm run build` fails to minify
+REACT_APP_API_URL = https://<your-backend-on-render>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Click Deploy
+
+👩‍💻 Author
+
+Sripriya
+B.Tech CSE Student
+Frontend & MERN Stack Developer
