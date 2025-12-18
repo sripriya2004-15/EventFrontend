@@ -1,0 +1,68 @@
+/* Card animation */
+.animated-card {
+  transform: translateY(-50px);
+  opacity: 0;
+  animation: slideIn 0.6s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Container for icon */
+.input-container {
+  position: relative;
+}
+
+/* Icon inside input */
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #6c757d;
+  pointer-events: none;
+  font-size: 1rem;
+  z-index: 3;
+}
+
+/* Input with icon */
+.input-with-icon {
+  padding-left: 2.5rem; /* space for icon */
+  text-align: left; /* center the text */
+  height: 50px;
+  font-size: 1rem;
+}
+
+/* Focus glow effect */
+.input-with-icon:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.3);
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Password toggle icon */
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #6c757d;
+  font-size: 1rem;
+  z-index: 3;
+}
+
+/* Button hover animation */
+.btn-animated {
+  transition: all 0.3s ease;
+}
+
+.btn-animated:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}

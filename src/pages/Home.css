@@ -1,0 +1,81 @@
+/* Hero Section */
+.home-container {
+  position: relative;
+  text-align: center;
+  height: 400px; /* set a fixed height for hero */
+}
+
+.home-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+
+.home-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.3);
+}
+
+.home-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+}
+
+.home-btn {
+  margin-top: 15px;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Description Section */
+.home-description {
+  background-color: #f8f9fa; /* light gray */
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+}
+
+.home-description h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.home-description p {
+  font-size: 1.1rem;
+  color: #495057;
+}
+
+@media (max-width: 768px) {
+  .home-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-text p {
+    font-size: 1rem;
+  }
+
+  .home-description p {
+    font-size: 1rem;
+  }
+
+  .home-container {
+    height: 250px;
+  }
+}

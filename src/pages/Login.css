@@ -1,0 +1,65 @@
+/* Card animation */
+.animated-card {
+  transform: translateY(-40px);
+  opacity: 0;
+  animation: slideIn 0.6s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Input container */
+.input-container {
+  position: relative;
+}
+
+/* Icons inside input */
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #6c757d;
+  pointer-events: none;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+/* Input styling */
+.input-with-icon {
+  padding-left: 2.5rem;
+  height: 50px;
+  font-size: 1rem;
+}
+
+/* Focus effect */
+.input-with-icon:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.3);
+  outline: none;
+}
+
+/* Password toggle */
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+/* Button animation */
+.btn-animated {
+  transition: all 0.3s ease;
+}
+
+.btn-animated:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
